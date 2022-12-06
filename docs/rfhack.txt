@@ -1,0 +1,19 @@
+bf84a3a9ba2235bb76
+
+edit bashrc to contain proper paths for building software
+source ~/.bashrc 
+
+mkdir /home/pi/my-stuff/my-software
+cd /home/pi/my-stuff/my-software
+git clone https://github.com/greatscottgadgets/hackrf.git
+git tag
+git checkout tags/v2022.09.1
+cd /hackrf/host
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=$HOME/.local ..
+rm * -r
+make -j2
+make install
+
+look in the src folders of the projects to find the binaries

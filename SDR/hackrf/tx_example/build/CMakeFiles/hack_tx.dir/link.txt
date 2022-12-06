@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/hack_tx.dir/src/hackrf_tx_main.cpp.o -o hack_tx  -Wl,-rpath,/usr/local/lib /usr/local/lib/libhackrf.so 

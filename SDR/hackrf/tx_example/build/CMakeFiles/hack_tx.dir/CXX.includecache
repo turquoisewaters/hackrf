@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/my-stuff/my-software/SDR/hackrf/common/include/hackrf_common.h
+hackrf.h
+-
+
+/home/pi/my-stuff/my-software/SDR/hackrf/tx_example/src/hackrf_tx_main.cpp
+Windows.h
+-
+cstdint
+-
+ctime
+-
+cmath
+-
+iostream
+-
+sstream
+-
+vector
+-
+algorithm
+-
+complex
+-
+hackrf.h
+-
+hackrf_common.h
+-
+
+/usr/local/include/libhackrf/hackrf.h
+stdint.h
+-
+
